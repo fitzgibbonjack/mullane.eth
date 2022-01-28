@@ -10,7 +10,9 @@ function Hamburger(props) {
       className={`hamburger ${navExpanded ? "visible" : ""}`}
       aria-expanded={navExpanded ? "true" : "false"}
       aria-controls="nav__links"
+      aria-label="menu toggle"
       onClick={props.onClick}
+      type="button"
     >
       <span></span>
       <span></span>
