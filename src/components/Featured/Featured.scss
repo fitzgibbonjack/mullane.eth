@@ -1,0 +1,24 @@
+.featured {
+  padding: 6rem 0;
+}
+
+.featured__button {
+  margin-inline: auto;
+}
+
+.container--projects {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media screen and (min-width: 48em) {
+  .container--projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .container--projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

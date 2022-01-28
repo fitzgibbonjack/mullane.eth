@@ -1,0 +1,13 @@
+.container--about {
+  background-color: var(--clr-primary-400);
+  padding: 3rem 0;
+}
+
+.container--skills {
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5rem;
+}
