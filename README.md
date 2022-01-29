@@ -7,6 +7,10 @@ A multi page website to present my personal portfolio for front end web developm
 ## Screenshot
 
 ![Screenshots of portfolio](https://i.ibb.co/Bw3QNTv/New-Project.png)
+<p align="center">Frontend (React)</p>
+
+![Screenshot of CMS admin panel](https://i.ibb.co/rMH42mT/Screenshot-2022-01-)
+<p align="center">CMS Admin Panel</p>
 
 ## Built with
 
