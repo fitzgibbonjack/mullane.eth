@@ -6,7 +6,7 @@ A multi page website to present my personal portfolio for front end web developm
 
 ## Screenshot
 
-![Screenshots of portfolio](https://ibb.co/d7MVgkX)
+![Screenshots of portfolio](https://i.ibb.co/Bw3QNTv/New-Project.png)
 
 ## Links
 
