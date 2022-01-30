@@ -20,7 +20,7 @@ Implemented ability to add projects and change information in the future by usin
 - Scss
 - React (create-react-app)
 - Strapi (headless CMS)
-- Single Page Application
+- Apollo (GraphQL client)
 
 ## Acknowledgments
 
