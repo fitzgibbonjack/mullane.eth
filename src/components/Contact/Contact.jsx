@@ -26,7 +26,7 @@ export default function Contact() {
         </p>
 
         <form onSubmit={handleSubmit} id="form">
-          <div className="container--input">
+          <div className="input">
             <input
               type="text"
               id="name"
@@ -40,7 +40,7 @@ export default function Contact() {
             </label>
           </div>
 
-          <div className="container--input">
+          <div className="input">
             <input
               type="email"
               id="email"
@@ -54,7 +54,7 @@ export default function Contact() {
             </label>
           </div>
 
-          <div className="container--input">
+          <div className="input">
             <textarea
               type="text"
               id="message"

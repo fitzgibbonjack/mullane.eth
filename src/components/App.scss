@@ -28,6 +28,13 @@ h2 {
   margin-bottom: 2.5rem;
 }
 
+a:hover:not(a[class="link__img"]),
+button:hover {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 // VARIABLES
 body {
   --clr-primary-300: white;

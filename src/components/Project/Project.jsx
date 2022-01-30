@@ -14,7 +14,6 @@ export default function Project({ data, skeleton, color }) {
           <div className="skeleton"></div>
           <div className="skeleton"></div>
           <div className="skeleton"></div>
-          <div className="skeleton"></div>
         </div>
         <div className="skeleton skeleton__links"></div>
         <div className="skeleton skeleton__badges"></div>
@@ -23,7 +22,7 @@ export default function Project({ data, skeleton, color }) {
   } else {
     return (
       <article className="project" style={{ backgroundColor: color }}>
-        <a href={data.liveUrl} className="link__live" aria-label="Live Site">
+        <a href={data.liveUrl} className="link__img" aria-label="Live Site">
           <img
             src={data.image.data[0].attributes.url}
             alt={`screenshot of ${data.title}`}

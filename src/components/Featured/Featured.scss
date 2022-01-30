@@ -6,19 +6,19 @@
   margin-inline: auto;
 }
 
-.container--projects {
+.projects {
   display: grid;
   gap: 2.5rem;
 }
 
 @media screen and (min-width: 48em) {
-  .container--projects {
+  .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 70em) {
-  .container--projects {
+  .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 }

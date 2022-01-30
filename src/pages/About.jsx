@@ -31,8 +31,8 @@ export default function About() {
 
       <Wave height="2rem" />
 
-      <main className="container--about">
-        <section className="container container--bio">
+      <main className="main--about">
+        <section className="container">
           <h2 className="bio__title">&#128214; - About Me</h2>
           {loading ? (
             <p>Loading...</p>
@@ -41,7 +41,7 @@ export default function About() {
           )}
         </section>
 
-        <aside className="container container--skills">
+        <aside className="container skills">
           <Skill skill="html" />
           <Skill skill="css" />
           <Skill skill="js" />

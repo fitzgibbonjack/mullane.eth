@@ -46,7 +46,7 @@ function Projects() {
 
       <Wave height="2rem" />
 
-      <main className="projects">
+      <main className="main--projects">
         <section className="container">
           <h2 className="projects__title">&#x1F4BB; - Projects</h2>
           <p>
@@ -55,7 +55,7 @@ function Projects() {
             pages, to complex dynamic applications.
           </p>
 
-          <div className="container--projects">
+          <div className="projects">
             {loading
               ? [" ", " ", " "].map((project, i) => (
                   <Project

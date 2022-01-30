@@ -19,7 +19,7 @@ export default function Navigation() {
 
   return (
     <expandedContext.Provider value={expanded}>
-      <nav aria-label="primary" className="container container--nav">
+      <nav aria-label="primary" className="container nav">
         <HashLink to="/#main" onClick={handleClick} tabIndex={0}>
           <img className="nav__logo" src="assets/logo.svg" alt="logo" />
         </HashLink>
