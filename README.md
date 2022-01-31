@@ -4,7 +4,7 @@ A multi page website to present my personal portfolio for front end web developm
 
 Implemented ability to add projects and change information in the future by using Strapi, a headless CMS. Admin panel to manage the content of the website is accesible by jackfitzgibbon.com/admin.
 
-[Deployed website](https://portfolio-p3z4.onrender.com/)
+[Deployed website](https://www.jackfitzgibbon.dev)
 
 ## Screenshot
 
@@ -16,11 +16,11 @@ Implemented ability to add projects and change information in the future by usin
 
 ## Built with
 
-- Semantic Markup
-- Scss
+- Semantic HTML5 Markup
 - React (create-react-app)
 - Strapi (headless CMS)
 - Apollo (GraphQL client)
+- SCSS
 
 ## Acknowledgments
 

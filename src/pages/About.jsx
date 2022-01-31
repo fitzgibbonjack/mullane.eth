@@ -25,9 +25,7 @@ export default function About() {
 
   return (
     <>
-      <header aria-label="primary">
-        <Navigation />
-      </header>
+      <Navigation />
 
       <Wave height="2rem" />
 

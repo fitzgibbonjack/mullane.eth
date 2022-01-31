@@ -40,9 +40,7 @@ function Projects() {
 
   return (
     <>
-      <header aria-label="primary">
-        <Navigation />
-      </header>
+      <Navigation />
 
       <Wave height="2rem" />
 

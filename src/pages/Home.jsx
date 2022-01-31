@@ -10,13 +10,7 @@ export default function Home() {
     <>
       <Splash />
 
-      <header
-        id="main"
-        aria-label="primary"
-        style={{ background: "hsla(0, 0%, 96%, 1)" }}
-      >
-        <Navigation />
-      </header>
+      <Navigation color="hsla(0, 0%, 96%, 1)" />
 
       <main>
         <About />
