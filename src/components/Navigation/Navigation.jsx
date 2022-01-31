@@ -21,35 +21,33 @@ export default function Navigation({ color }) {
   return (
     <expandedContext.Provider value={expanded}>
       <header id="main" aria-label="primary" style={{ background: `${color}` }}>
-        <nav aria-label="primary" className="nav">
-          <div className="container">
-            <HashLink to="/#main" onClick={handleClick} tabIndex={0}>
-              <img className="nav__logo" src="assets/logo.svg" alt="logo" />
-            </HashLink>
+        <nav aria-label="primary" className="nav container">
+          <HashLink to="/#main" onClick={handleClick} tabIndex={0}>
+            <img className="nav__logo" src="assets/logo.svg" alt="logo" />
+          </HashLink>
 
-            <ul
-              className={`nav__links ${expanded ? "visible" : ""}`}
-              id="nav__links"
-            >
-              <li>
-                <Link to="/about" onClick={handleClick}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects" onClick={handleClick}>
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <HashLink to="/#contact" onClick={handleClick}>
-                  Contact
-                </HashLink>
-              </li>
-            </ul>
+          <ul
+            className={`nav__links ${expanded ? "visible" : ""}`}
+            id="nav__links"
+          >
+            <li>
+              <Link to="/about" onClick={handleClick}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects" onClick={handleClick}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <HashLink to="/#contact" onClick={handleClick}>
+                Contact
+              </HashLink>
+            </li>
+          </ul>
 
-            <Hamburger onClick={toggleExpanded} />
-          </div>
+          <Hamburger onClick={toggleExpanded} />
         </nav>
       </header>
     </expandedContext.Provider>

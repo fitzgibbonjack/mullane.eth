@@ -10,17 +10,6 @@
   gap: 2rem;
 }
 
-header {
-  position: sticky;
-  top: -20vh;
-  z-index: 1;
-  transition: top 0.5s ease-in-out;
-}
-
-header.scroll-up {
-  top: 0;
-}
-
 .nav__logo {
   width: 2rem;
   filter: brightness(0) saturate(100%) invert(20%) sepia(0%) saturate(2521%)
@@ -34,7 +23,7 @@ header.scroll-up {
   gap: 2.5rem;
 
   position: absolute;
-  top: 6.5rem;
+  top: 7rem;
   left: 0;
   right: 0;
   width: 100%;
