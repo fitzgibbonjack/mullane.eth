@@ -9,6 +9,7 @@ import "./Navigation.scss";
 export const expandedContext = React.createContext();
 
 export default function Navigation({ color }) {
+  console.log("rendered");
   const [expanded, setExpanded] = useState(false);
   const scrollDirection = useScrollDirection();
 
@@ -24,7 +25,7 @@ export default function Navigation({ color }) {
     <expandedContext.Provider value={expanded}>
       <header
         id="main"
-        className={`main-header ${scrollDirection == "up" ? "show" : ""}`}
+        className={`main-header ${scrollDirection === "up" ? "visible" : ""}`}
         aria-label="primary"
         style={{ background: `${color ? color : "var(--clr-primary-300)"}` }}
       >
@@ -53,7 +54,6 @@ export default function Navigation({ color }) {
               </HashLink>
             </li>
           </ul>
-
           <Hamburger onClick={toggleExpanded} />
         </nav>
       </header>
