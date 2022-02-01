@@ -9,7 +9,6 @@ import "./Navigation.scss";
 export const expandedContext = React.createContext();
 
 export default function Navigation({ color }) {
-  console.log("rendered");
   const [expanded, setExpanded] = useState(false);
   const scrollDirection = useScrollDirection();
 
