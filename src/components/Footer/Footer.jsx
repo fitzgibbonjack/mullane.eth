@@ -29,12 +29,12 @@ export default function Footer() {
           </li>
           <li className="nav__twitter">
             <a href={twitter} aria-label="Twitter profile">
-              <img src={LinkedIn} alt="LinkedIn logo" />
+              <img src={Twitter} alt="LinkedIn logo" />
             </a>
           </li>
           <li className="nav__linkedin">
             <a href={linkedin} aria-label="LinkedIn profile">
-              <img src={Twitter} alt="Twitter logo" />
+              <img src={LinkedIn} alt="Twitter logo" />
             </a>
           </li>
         </ul>

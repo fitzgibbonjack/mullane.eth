@@ -43,16 +43,13 @@ export default function Featured() {
       <div className="container">
         <h2 className="featured__title">&#128187; - Featured Projects</h2>
         <div className="projects">
-          {[...Array(3)].map((project, i) => (
-            <Project skeleton="true" key={i} />
-          ))}
-          {/* {loading
+          {loading
             ? [...Array(3)].map((project, i) => (
                 <Project skeleton="true" key={i} />
               ))
             : data.projects.data.map((project, i) => (
                 <Project data={project.attributes} key={i} />
-              ))} */}
+              ))}
         </div>
         <a href="/projects" className="button--primary featured__button">
           view all projects
