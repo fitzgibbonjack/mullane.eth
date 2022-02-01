@@ -1,6 +1,8 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import React, { useEffect, useState } from "react";
+import useScrollDirection from "../../hooks/useScrollDirection";
+
 import Hamburger from "../Hamburger/Hamburger";
 import "./Navigation.scss";
 
@@ -8,7 +10,7 @@ export const expandedContext = React.createContext();
 
 export default function Navigation({ color }) {
   const [expanded, setExpanded] = useState(false);
-  const [scrollUp, setScrollUp] = useState(false);
+  const scrollDirection = useScrollDirection();
 
   const toggleExpanded = () => {
     setExpanded(!expanded);
@@ -20,7 +22,12 @@ export default function Navigation({ color }) {
 
   return (
     <expandedContext.Provider value={expanded}>
-      <header id="main" aria-label="primary" style={{ background: `${color}` }}>
+      <header
+        id="main"
+        className={`main-header ${scrollDirection == "up" ? "show" : ""}`}
+        aria-label="primary"
+        style={{ background: `${color ? color : "var(--clr-primary-300)"}` }}
+      >
         <nav aria-label="primary" className="nav container">
           <HashLink to="/#main" onClick={handleClick} tabIndex={0}>
             <img className="nav__logo" src="assets/logo.svg" alt="logo" />
