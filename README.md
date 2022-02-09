@@ -21,6 +21,7 @@ Implemented ability to add projects and change information in the future by usin
 - Strapi (headless CMS)
 - Apollo (GraphQL client)
 - SCSS
+- Getform.io (contact form email notifications)
 
 ## Acknowledgments
 
