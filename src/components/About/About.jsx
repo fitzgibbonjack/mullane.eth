@@ -19,8 +19,7 @@ export default function About() {
         </p>
         <p className="about__para">
           In my spare time when I'm not coding, you'll probably find me playing
-          Playstation, or watching Youtube videos about the finest horological
-          timepieces.
+          Apex Legends, or working on my latest side project.
         </p>
 
         <a className="button--primary about__button" href="/about">

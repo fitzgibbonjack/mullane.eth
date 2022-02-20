@@ -1,6 +1,5 @@
 import "./Footer.scss";
 import Github from "../../assets/github.ico";
-import Insta from "../../assets/insta.ico";
 import LinkedIn from "../../assets/linkedin.ico";
 import Twitter from "../../assets/twitter.ico";
 
@@ -20,11 +19,6 @@ export default function Footer() {
           <li className="nav__github">
             <a href={github} aria-label="Github">
               <img src={Github} alt="Github logo" />
-            </a>
-          </li>
-          <li className="nav__instagram">
-            <a href={insta} aria-label="Instagram">
-              <img src={Insta} alt="Instagram logo" />
             </a>
           </li>
           <li className="nav__twitter">
