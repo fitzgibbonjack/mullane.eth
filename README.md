@@ -5,20 +5,20 @@
 -   Release: 2.0.0
 -   Developer: Jack Fitzgibon
 -   <a href="https://app.fleek.co/#/sites/mullane/overview?accountId=e41f8f4f-f678-46dc-ab17-40d322ffa757" target="_blank">
-         <img src="https://i.ibb.co/Vxqw5XM/logo.png" alt="Fleek CI/CD" width="32px"
+         <img src="https://i.imgur.com/qaeyKlu.png" alt="Fleek CI/CD" width="32px"
     		style="vertical-align: middle">
     		Deployment & Hosting
      </a>
 -   <a href="https://app.fleek.co/#/sites/mullane/overview?accountId=e41f8f4f-f678-46dc-ab17-40d322ffa757" target="_blank">
-         <img src="https://assets.website-files.com/5c8bce998bdcd3b7371625fa/624376c93c16bcd235c4c07d_sanity-logo.png" alt="Fleek CI/CD" width="32px"
+         <img src="https://i.imgur.com/EsqJPv6.png" alt="Fleek CI/CD" width="32px"
     		style="vertical-align: middle">
     		Content Management
      </a>
 
 ### Stack
 
--   Gatsby (Frontend)
 -   TypeScript
+-   Gatsby (Frontend)
 -   SCSS (CSS Preproccesor)
 -   Sanity (Content Management)
 
@@ -53,4 +53,4 @@ The last main objective with this piece of work is to move the hosting over to a
 
 ## Architecture
 
-<img src="https://i.ibb.co/NNqJqwG/Web-hook-triggers-build-deploy.png" width="469px"/>
+<img src="https://i.imgur.com/K1Hesx3.png" width="469px"/>
