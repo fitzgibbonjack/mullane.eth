@@ -1,28 +1,56 @@
-## Overview
+# Mullane.eth - Website
 
-A multi page website to present my personal portfolio for front end web development.
+## Project Overview
 
-Implemented ability to add projects and change information in the future by using Strapi, a headless CMS. Admin panel to manage the content of the website is accesible by jackfitzgibbon.com/admin.
+-   Release: 2.0.0
+-   Developer: Jack Fitzgibon
+-   <a href="https://app.fleek.co/#/sites/mullane/overview?accountId=e41f8f4f-f678-46dc-ab17-40d322ffa757" target="_blank">
+         <img src="https://i.imgur.com/qaeyKlu.png" alt="Fleek CI/CD" width="32px"
+    		style="vertical-align: middle">
+    		Deployment & Hosting
+     </a>
+-   <a href="https://app.fleek.co/#/sites/mullane/overview?accountId=e41f8f4f-f678-46dc-ab17-40d322ffa757" target="_blank">
+         <img src="https://i.imgur.com/EsqJPv6.png" alt="Fleek CI/CD" width="32px"
+    		style="vertical-align: middle">
+    		Content Management
+     </a>
 
-[Deployed website](https://www.jackfitzgibbon.dev)
+### Stack
 
-## Screenshot
+-   TypeScript
+-   Gatsby (Frontend)
+-   SCSS (CSS Preproccesor)
+-   Sanity (Content Management)
 
-<img src="https://i.ibb.co/NVYyDy7/portfolio.png" alt="screenshots of portfolio">
-<p>Frontend (React)</p>
+### Introduction
 
-<img src="https://i.ibb.co/rMH42mT/Screenshot-2022-01-29-at-21-49-28.png" alt="screenshot of cms admin panel">
-<p>CMS Admin Panel</p>
+This second release of my personal website is built upon Gatsby, using Static Site Generation.
 
-## Built with
+Previously, CRA was chosen at the time as I was very new to development, I now realise that it is far from the suitable choice for a brochure site. Gatsby provides improved SEO (static HTML rather than client side rendering handled by JS) and decreased page load times. This all helps with search engine rankings.
 
-- Semantic HTML5 Markup
-- React (create-react-app)
-- Strapi (headless CMS)
-- Apollo (GraphQL client)
-- SCSS
-- Getform.io (contact form email notifications)
+The last main objective with this piece of work is to move the hosting over to a decentralised protocol, specifically one that is supported by ENS (Ethereum Name Service) domains. This will allow me to make use of my current .eth domain, and reap the benefits of the IPFS protocol - such as decreased bandwidth via obtaining files from multiple peers at once.
 
-## Acknowledgments
+## Running the application locally
 
-- [TypewriterJS - module that provides typewriter effect](https://www.npmjs.com/package/typewriter-effect)
+-   Run `npm i` to install packages
+    -   Ensure you're running node v18.12
+-   Run `gatsby develop`
+    -   Runs a server in the background, enabling useful features like live reloading and Gatsby’s data explorer.
+
+## Standards, Conventions, Etc
+
+-   Variant of <a href="https://sass-guidelin.es/#the-7-1-pattern" target="_blank">7-1 architecture</a> for SCSS structure
+-   <a href="http://getbem.com" target="_blank">BEM</a> for SCSS/CSS methodology
+-   Check `.editorconfig` for indentation, max line length, etc
+-   Rems to be used for measurement in SCSS. Pixels can be converted with the `calc-rem` function
+
+## Access
+
+| Environment |         URL          |
+| ----------: | :------------------: |
+|       Local |    localhost:8000    |
+|  Production | https://mullane.eth/ |
+
+## Architecture
+
+<img src="https://i.imgur.com/K1Hesx3.png" width="469px"/>
