@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Typewriter from "typewriter-effect";
-import Cursor from "../cursor/cursor";
+import Cursor from "./cursor/cursor";
+import EnterButton from "./enterButton/enterButton";
 import * as styles from "./hero.module.scss";
 
 export default function Hero() {
@@ -31,10 +32,7 @@ export default function Hero() {
 						wrapperClassName: styles.Typewriter,
 					}}
 				/>
-				<a className={styles.scrollPrompt} aria-hidden="true" aria-label="scroll down" href="#main">
-					<span className={styles.scrollPrompt__arrow}>↓</span>
-					scroll
-				</a>
+				<EnterButton />
 			</div>
 			<Cursor hero={heroRef} />
 		</section>

@@ -1,11 +1,13 @@
 @import "../../scss/abstracts/mixins";
 
 .hero {
+	cursor: none;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	padding-top: 8vh;
 	position: relative;
+	scroll-snap-align: start;
 	background: linear-gradient(180deg, #dadada 0%, #ffffff 100%);
 	background-size: 100% 12vh;
 	background-repeat: no-repeat;
@@ -33,8 +35,10 @@
 	}
 
 	@include lg {
-		display: flex;
+		position: fixed;
+		top: 0 !important;
 		align-items: center;
+		scroll-snap-align: unset;
 	}
 }
 
@@ -43,22 +47,10 @@
 	font-size: clamp(1.25rem, 4vw, 1.3rem);
 }
 
-.scroll-prompt {
-	gap: 0.25rem;
-	position: absolute;
-	@include set-flex(center);
-	animation: bounce 0.5s infinite alternate;
-
-	@include hover {
-		cursor: none;
-	}
-
-	@keyframes bounce {
-		from {
-			bottom: 5vh;
-		}
-		to {
-			bottom: 5.5vh;
-		}
+:global(#gatsby-focus-wrapper) {
+	@include max-lg {
+		height: 100vh;
+		overflow-y: scroll;
+		scroll-snap-type: y mandatory;
 	}
 }

@@ -1,0 +1,36 @@
+@import "../../../scss/abstracts/mixins";
+
+.container {
+	@include lg {
+		opacity: 0;
+		transition: opacity 1250ms;
+	}
+}
+
+.cursor,
+.glow {
+	position: absolute;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 100%;
+
+	@include lg {
+		position: fixed;
+	}
+}
+
+.cursor {
+	z-index: 2;
+	background-color: white;
+	border: 2px solid rgb(207, 207, 207);
+
+	@include lg {
+		--size: 1rem;
+	}
+}
+
+.glow {
+	--size: 0;
+	z-index: 1;
+	box-shadow: 0 0 120px 70px rgba(102, 153, 254, 0.629), 0 0 240px 130px rgba(255, 190, 168, 0.825);
+}

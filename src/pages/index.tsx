@@ -8,8 +8,8 @@ export default function IndexPage() {
 	return (
 		<>
 			<Hero />
-			<main>
-				<h1 style={{ height: "100vh" }}>Mullane.eth</h1>
+			<main style={{ height: "100vh", scrollSnapAlign: "start" }}>
+				<h1>Mullane.eth</h1>
 			</main>
 		</>
 	);
