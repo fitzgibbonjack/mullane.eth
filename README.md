@@ -46,10 +46,11 @@ The last main objective with this piece of work is to move the hosting over to a
 
 ## Access
 
-| Environment |         URL          |
-| ----------: | :------------------: |
-|       Local |    localhost:8000    |
-|  Production | https://mullane.eth/ |
+| Environment |                 URL                  |
+| ----------: | :----------------------------------: |
+|       Local |            localhost:8000            |
+|     Staging | https://mullane-staging.on.fleek.co/ |
+|  Production |         https://mullane.eth/         |
 
 ## Architecture
 
