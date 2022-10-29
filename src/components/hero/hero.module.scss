@@ -1,0 +1,64 @@
+@import "../../scss/abstracts/mixins";
+
+.hero {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	padding-top: 8vh;
+	position: relative;
+	background: linear-gradient(180deg, #dadada 0%, #ffffff 100%);
+	background-size: 100% 12vh;
+	background-repeat: no-repeat;
+
+	&__container {
+		@include container;
+		z-index: 2;
+	}
+
+	&__title {
+		font-size: clamp(2rem, 4vw, 2.6rem);
+		max-width: 50rem;
+		margin-bottom: 3rem;
+		line-height: 1.3em;
+
+		strong {
+			color: var(--clr-secondary-400);
+			font-weight: 800;
+		}
+	}
+
+	@include md {
+		padding-top: 6rem;
+		padding-bottom: 14rem;
+	}
+
+	@include lg {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.Typewriter,
+.Typewriter + span {
+	font-size: clamp(1.25rem, 4vw, 1.3rem);
+}
+
+.scroll-prompt {
+	gap: 0.25rem;
+	position: absolute;
+	@include set-flex(center);
+	animation: bounce 0.5s infinite alternate;
+
+	@include hover {
+		cursor: none;
+	}
+
+	@keyframes bounce {
+		from {
+			bottom: 5vh;
+		}
+		to {
+			bottom: 5.5vh;
+		}
+	}
+}
