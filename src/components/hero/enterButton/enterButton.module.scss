@@ -1,0 +1,21 @@
+@import "../../../scss/abstracts/mixins";
+
+.enter-button {
+	gap: 0.25rem;
+	position: absolute;
+	@include set-flex(center);
+	animation: bounce 0.5s infinite alternate;
+
+	@include hover {
+		cursor: none !important;
+	}
+
+	@keyframes bounce {
+		from {
+			bottom: 5vh;
+		}
+		to {
+			bottom: 5.5vh;
+		}
+	}
+}
