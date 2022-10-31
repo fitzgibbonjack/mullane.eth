@@ -11,3 +11,11 @@ $breakpoints: (
 	"xxl": 1400px,
 	"xxxl": 1920px,
 );
+
+// Colors
+:root {
+	--clr-primary-300: #fff;
+	--clr-primary-400: #f5f5f5;
+	--clr-secondary-300: rgba(61, 61, 61, 0.5);
+	--clr-secondary-400: #3d3d3d;
+}
