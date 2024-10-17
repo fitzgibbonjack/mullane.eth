@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import useHeroAnimation from "../../../animations/heroAnimation";
+import useHeroAnimation from "../../animations/heroAnimation";
 import * as styles from "./cursor.module.scss";
 
 export default function Cursor({ hero }: { hero: any }) {

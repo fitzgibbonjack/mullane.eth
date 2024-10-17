@@ -1,7 +1,8 @@
-@import "../../../scss/abstracts/mixins";
+@import "../../scss/abstracts/mixins";
 
 .enter-button {
 	gap: 0.25rem;
+	color: black;
 	position: absolute;
 	@include set-flex(center);
 	animation: bounce 0.5s infinite alternate;
